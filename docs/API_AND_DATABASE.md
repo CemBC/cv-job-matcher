@@ -1,6 +1,6 @@
 # API and local database design (proposed contract)
 
-## Endpoints
+## Planned endpoints (not implemented)
 - `GET /api/v1/health` – health check
 - `POST /api/v1/jobs` – create a posting (title, description, optional required skills)
 - `GET /api/v1/jobs` – list postings
@@ -15,7 +15,7 @@
 - `GET /api/v1/matching-runs/{run_id}/export.csv` – ranking export (Phase 4+)
 - `GET /api/v1/evaluation/summary` – audited metrics (Phase 5+)
 
-All response schemas, status codes and failure shapes must be documented and tested; versioned routes should remain backwards-compatible where practical.
+Research scope is Turkish backend software developer postings (junior/mid-level) matched to multiple Turkish resumes. English resumes and cross-language matching are deferred. All response schemas, status codes and failure shapes must be documented and tested; versioned routes should remain backwards-compatible where practical.
 
 ## SQLite entities
 - `jobs`: id, title, description, language, source, created_at, updated_at

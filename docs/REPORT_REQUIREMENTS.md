@@ -1,5 +1,5 @@
 # Öğretmenin paylaştığı rapor yönergesi — zorunlu teslim kontrolü
-Kaynak: Kullanıcının paylaştığı `Proje raporu hakkında.docx`. Bu belge kaynak dokümanın **özeti** olup raporların kendisi henüz yazılmadı.
+Kaynak: `docs/reference/Proje raporu hakkında.docx`, 2026-11-13 tarihinde metne dönüştürülerek doğrulandı. Bu Markdown dosyası öğretmen belgesinin kontrol listesidir; DOCX raporların kendisi henüz yazılmadı. Üniversitenin resmi rapor kuralları varsa öğretmen belgesinde belirtildiği gibi önceliklidir.
 
 ## A. ANALİZ RAPORU — planlama / kodlama öncesi
 Kapak, Özet, İçindekiler

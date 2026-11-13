@@ -10,6 +10,7 @@ cv-job-matcher/
 │   ├── PRODUCT_REQUIREMENTS.md
 │   ├── ARCHITECTURE.md
 │   ├── DATASET_STRATEGY.md
+│   ├── RESEARCH_FEASIBILITY.md
 │   ├── NLP_AND_SCORING.md
 │   ├── EVALUATION.md
 │   ├── API_AND_DATABASE.md
@@ -30,7 +31,7 @@ cv-job-matcher/
 └── .env.example
 ```
 
-The folders shown are a **target** structure. Codex should create only files needed by the approved phase, not empty decorative modules.
+The folders shown are a **target** structure. Codex should create only files needed by the approved phase, not empty decorative modules. The current approved work is documents/research only; no application code is authorized by this target architecture.
 
 ## Runtime flow
 Browser (React on localhost:5173) → REST API (FastAPI on localhost:8000) → services (text extraction, normalization, skill extraction, both similarity methods) → SQLite + local private storage. The frontend never directly accesses SQLite or private file paths. Heavy NLP inference may initially run sequentially; benchmark before adding a job queue.
@@ -42,5 +43,5 @@ Browser (React on localhost:5173) → REST API (FastAPI on localhost:8000) → s
 - Configuration through env variables with safe localhost defaults; `.env` excluded from version control.
 - No Docker required for initial MVP; optional later.
 
-## Implementation gate
-Architecture describes the **future** localhost prototype, not permission to code. Instructor expects a verified methodology/dataset and preliminary analysis report first.
+## Implementation status and data-use boundary
+This is the target localhost prototype architecture for Turkish backend developer postings and Turkish resumes. Implementation is the next project phase. Synthetic fixtures may be used for software development and tests. Real personal CVs or restricted job-ad text may enter the system only after provenance, use rights, applicable privacy process, retention/deletion and institutional requirements are established. English and cross-language work is deferred.

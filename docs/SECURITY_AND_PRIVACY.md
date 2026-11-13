@@ -2,6 +2,9 @@
 
 CVs contain personal information. Treat research data and uploaded documents as private even on localhost.
 
+## Research collection boundary
+No personal CV data may be collected or processed for this research until the source, purpose, access rights, privacy notice/consent or other applicable legal basis, retention/deletion plan, and any institutional review requirements are confirmed. Publicly viewable job ads are not automatically licensed for collection or redistribution. Do not scrape during the current research phase.
+
 ## Required
 - Do not store or publish real resumes, phones, addresses, emails, photos or dataset raw text in Git, screenshots or console logs.
 - Add `.gitignore` for `.env`, SQLite files, uploads, raw/processed/evaluation datasets, caches, virtual environments and model artifacts.
